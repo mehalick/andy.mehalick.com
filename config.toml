@@ -9,6 +9,7 @@ theme = 'hello-friend'
 [params]
   defaultTheme = "dark"
   showReadingTime = true
+  rssFullText = true
 
 [languages]
   [languages.en]
@@ -24,3 +25,26 @@ theme = 'hello-friend'
         name = "RSS"
         url = "/index.xml"
      
+[deployment]
+
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+# order = [".jpg$", ".gif$", ".png$"]
+
+  [[deployment.targets]]
+    name = "S3"
+    URL = "s3://andy.mehalick.com?region=us-east-1"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+# cloudFrontDistributionID = <ID>
+
+# [[deployment.matchers]] configure behavior for files that match the Pattern.
+# See https://golang.org/pkg/regexp/syntax/ for pattern syntax.
+# Pattern searching is stopped on first match.
+
+# Samples:
+
+  [[deployment.matchers]]
+    pattern = "^.+\\.(html|xml|json)$"
+    gzip = true
