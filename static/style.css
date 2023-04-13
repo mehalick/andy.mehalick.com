@@ -1,0 +1,9 @@
+.index-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+figure.float-right {
+    float: right;
+    margin: 1em 0 1em 1em;
+}
