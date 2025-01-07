@@ -15,13 +15,13 @@ It’s day #1 on a new project demanding my favorite requirement: localization y
 
 My requirements are simple: I’m using EF code first and will need to store entities having multilanguage properties... and I want to work with a super-simple, elegant, unobtrusive API that reads like poetry. Spoiler alert — we’re bringing JSON to the party along with my new favorite NuGet package (ok dislaimer I wrote it).
 
-![](https://andy.azureedge.net/blog/localized-property-636217948871506770.jpg)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/localized-property-636217948871506770.jpg)
 
 Let’s jump in — this tutorial will ditch the too-popular generic lookup table approach and store localized text for entities as key/value serialized JSON. Our JSON is simple, readable, and searchable. We’ll then use some simple extension methods from the NuGet package [OrangeJetpack.Localization](https://www.nuget.org/packages/OrangeJetpack.Localization) to make getting and setting our localized text a breeze.
 
 To peak ahead just a bit we’ll be using a regular EF POCO model and code-first migrations. We’ll work with an entity **Planet** having a **PlanetId** and a **Name** property that will eventually be localized to English, Russian, and Japanese. Ultimately it will look like this in our database:
 
-![](https://andy.azureedge.net/blog/8-28-2013-8-54-38-pm-636217948862861091.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/8-28-2013-8-54-38-pm-636217948862861091.png)
 
 ## Setup
 
@@ -75,7 +75,7 @@ public class HomeController : Controller
 
 Snap your fingers to add some sample data and you should see:
 
-![](https://andy.azureedge.net/blog/8-28-2013-7-36-35-pm-636217948851575515.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/8-28-2013-7-36-35-pm-636217948851575515.png)
 
 Eesh, close but let’s now show the localized content only.
 
@@ -130,11 +130,11 @@ public class HomeController : Controller
 
 Of course we could get language code from the user’s web browser or a profile setting but let’s keep it simple for now. If we omit a language code or use an unsupported one it will default to the first language in our app settings, “en” by default. Let’s run it again passing in the language code for Russian:
 
-![](https://andy.azureedge.net/blog/8-28-2013-7-59-35-pm-636217948858550811.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/8-28-2013-7-59-35-pm-636217948858550811.png)
 
 Here’s what it would look like with no language, Japanese, or an unknown language:
 
-![](https://andy.azureedge.net/blog/8-28-2013-8-54-38-pm-636217948862861091.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/8-28-2013-8-54-38-pm-636217948862861091.png)
 
 ## Multiple Localized Properties
 

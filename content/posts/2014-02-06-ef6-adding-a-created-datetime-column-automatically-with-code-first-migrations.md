@@ -7,7 +7,7 @@ post_id: 8
 
 Here’s a quick one, I’m using EF6 code first migrations and I want to add a created date/time column to every table in the database. I want it to have a default value of GETUTCDATE() and ultimately look like:
 
-![](https://andy.azureedge.net/blog/2-6-2014-12-07-35-pm-636217949810973800.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/2-6-2014-12-07-35-pm-636217949810973800.png)
 
 I’m using UTC dates so I don’t have to worry about the time zone of the server where this ultimately lives and calling the column **CreatedUtc** because it’s concise but clear.
 
@@ -74,7 +74,7 @@ Now we’ll enable migrations and create a single migration to create our Produc
 
 At this point our solution looks like:
 
-![](https://andy.azureedge.net/blog/2-6-2014-11-52-49-am-636217949804428170.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/2-6-2014-11-52-49-am-636217949804428170.png)
 
 We now want to ensure that when we update our database via code first migrations  our **CreatedUtc** property gets a default value, in this case GETUTCDATE(). One option would be to adjust the migration class manually, for each entity we _could_ update CreateTable(), notice the addition of defaultValueSql: "GETUTCDATE()".
 

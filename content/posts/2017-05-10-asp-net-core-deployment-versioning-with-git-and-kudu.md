@@ -4,7 +4,7 @@ post_id: 10
 date: 2017-05-10
 title: ASP.NET Core Deployment Versioning with Git and Kudu
 excerpt: How to add deployment version metadata to ASP.NET Core websites using Git, Microsoft Azure, and Kudu.
-cover: https://andy.azureedge.net/blog/crab-636301801571668026.jpg
+cover: https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/crab-636301801571668026.jpg
 ---
 
 While there's no shortage of fancy and elaborate ways to add version and deployment metadata into ASP.NET apps you already have an easy option if you're using Git and Azure's Kudu deployment. With a simple script and a few extra bits added to your ASP.NET Core project you can easily add version and deployment data directly into your pages:
@@ -63,15 +63,15 @@ To see everything in action you'll need to set up Git automated deployment using
 
 If you're pushing directly to Azure:
 
-![](https://andy.azureedge.net/blog/2017-04-29_13-28-30-636290585727143991.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/2017-04-29_13-28-30-636290585727143991.png)
 
 Or via the Azure portal, App > Deployment Options > Deployment Details:
 
-![](https://andy.azureedge.net/blog/2017-04-29_13-24-11-636290582870290991.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/2017-04-29_13-24-11-636290582870290991.png)
 
 Finally, to confirm version.json was created successfully you can connect to your site via FTP or via your Kudu site available at https://{siteName}.scm.azurewebsites.net/DebugConsole:
 
-![](https://andy.azureedge.net/blog/2017-04-29_13-14-40-636290577131373014.png)
+![](https://andy-bhbtdzffahctcwh8.z01.azurefd.net/blog/2017-04-29_13-14-40-636290577131373014.png)
 
 ## Reading our Version Deployment File
 

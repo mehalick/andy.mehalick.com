@@ -1,7 +1,7 @@
 ---
 ---
 
-{{< figure src="https://andy.azureedge.net/assets/andy-mehalick-v2-280x280-bw-637099131735023584.jpg" alt="Andy Mehalick" position="float-right" style="width: 140px; height: 140px; border-radius: 10px;" >}}
+{{< figure src="https://andy-bhbtdzffahctcwh8.z01.azurefd.net/assets/andy-mehalick-v2-280x280-bw-637099131735023584.jpg" alt="Andy Mehalick" position="float-right" style="width: 140px; height: 140px; border-radius: 10px;" >}}
 
 Hi I'm Andy — I'm currently working as a cloud application architect at AWS.
 
